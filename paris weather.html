@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Application</title>
+    
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f3f3f3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.weather-container {
+    width: 600px;
+    background-color: #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+    color: black;
+    text-decoration: underline;
+}
+
+.search-bar {
+    margin: 20px 0;
+}
+
+.search-bar input {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.search-bar button {
+    padding: 10px 15px;
+    background-color: #8A4BAF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.current-weather {
+    margin: 20px 0;
+    font-size: 16px;
+}
+
+.current-weather .temperature {
+    font-size: 36px;
+    color: #333;
+}
+
+.forecast {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.day {
+    text-align: center;
+    color: #5A4B81;
+}
+
+.day img {
+    width: 40px;
+    height: 40px;
+}
+
+footer {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #333;
+}
+</style>
+<body>
+    <div class="weather-container">
+        <h1>Welcome to our Weather Application</h1>
+        <div class="search-bar">
+            <input type="text" placeholder="Enter city name" id="cityInput">
+            <button type="button">SEARCH</button>
+        </div>
+        <h2>
+            Paris
+        </h2>
+        <div class="current-weather">
+            <div class="temperature">12°C</div>
+            <div class="details">
+                <p>Tuesday 14:40 - scattered clouds</p>
+                <p>Humidity: 67% - Wind Speed: 4.3</p>
+            </div>
+        </div>
+        <div class="forecast">
+            <div class="day">
+                <p>Mon</p>
+                <p>15°</p>
+                <p><img src="cloud-icon.png" alt="cloud"></p>
+            </div>
+            <div class="day">
+                <p>Tue</p>
+                <p>15°</p>
+                <p><img src="cloud-icon.png" alt="cloud"></p>
+            </div>
+            <div class="day">
+                <p>Wed</p>
+                <p>15°</p>
+                <p><img src="cloud-icon.png" alt="cloud"></p>
+            </div>
+            <div class="day">
+                <p>Thu</p>
+                <p>15°</p>
+                <p><img src="cloud-icon.png" alt="cloud"></p>
+            </div>
+            <div class="day">
+                <p>Fri</p>
+                <p>15°</p>
+                <p><img src="cloud-icon.png" alt="cloud"></p>
+            </div>
+            <div class="day">
+                <p>Sat</p>
+                <p>15°</p>
+                <p><img src="cloud-icon.png" alt="cloud"></p>
+            </div>
+            <div class="day">
+                <p>Sun</p>
+                <p>15°</p>
+                <p><img src="cloud-icon.png" alt="cloud"></p>
+            </div>
+        </div>
+        <footer>
+            <p>Created by <a href=AwinjaRenny>Awinja Renny</a>and uploaded by<a href=netify>Netify</a><br>The design was done using<a href=figma>Figma</a></p>
+            
+        </footer>
+    </div>
+</body>
+</html>
