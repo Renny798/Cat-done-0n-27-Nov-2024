@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Account</title>
+    
+</head>
+<style>
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .error{
+        color: red;
+    }
+    button{
+        margin-top: 15px;
+        padding: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        
+    }
+    button[type="submit"]{
+        background-color: gainsboro;
+        color: black;
+    }
+    button[type="reset"]{
+        background-color: gainsboro;
+        color: black;
+    }
+</style>
+<body>
+    <div class="form-container">
+        <h1>Register Account</h1>
+        <form id="registerForm">
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" placeholder="Enter your full name">
+            <span class="error" id="fullNameError">User name must be at least 4 characters</span><br>
+            
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password">
+            <span class="error" id="passwordError">Password must be at least 4 characters</span><br>
+
+            <label for="confirmPassword">Confirm Password:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Re-enter your password">
+            <span class="error" id="confirmPasswordError">Passwords do not match</span><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="example@domain.com">
+            <span class="error" id="emailError">Invalid email format</span><br>
+
+            <label for="phone">Phone Number:</label>
+            <input type="text" id="phone" name="phone" placeholder="XXX-XXX-XXXX">
+            <span class="error" id="phoneError">Invalid phone number</span><br>
+
+            <label for="zip">Zip Code:</label>
+            <input type="text" id="zip" name="zip" placeholder="5 or 9 digits Zip Code">
+            <span class="error" id="zipError">Invalid Zip Code</span><br>
+
+            <label for="cardNumber">Card Number:</label>
+            <input type="text" id="cardNumber" name="cardNumber" placeholder="XXXX-XXXX-XXXX-XXXX">
+            <span class="error" id="cardNumberError">Invalid card number format</span><br>
+
+            <label for="expirationDate">Expiration Date:</label>
+            <input type="text" id="expirationDate" name="expirationDate" placeholder="YYYY-MM-DD">
+            <span class="error" id="expirationDateError">Invalid date format</span><br>
+
+            <button type="submit">Register</button>
+            <button type="reset">Clear Form</button>
+        </form>
+    </div>
+</body>
+</html>
